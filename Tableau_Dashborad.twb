@@ -1,0 +1,3390 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Account.csv+ (Multiple Connections)' inline='true' name='federated.1rcglt3055ryv1189mmi90193fds' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Account' name='textscan.0t37suk1o9o4s4187d7ra0fbj9k9'>
+            <connection class='textscan' directory='D:/Excel R Project 2/CRM Project/CRM Project/Dataset' filename='Account.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='Lead' name='textscan.11tysde1dko9ys10plco60dmfqaz'>
+            <connection class='textscan' directory='D:/Excel R Project 2/CRM Project/CRM Project/Dataset' filename='Lead.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='Oppertuninty Table' name='textscan.04ifdiz1ui2cf31bnwilg1byyeto'>
+            <connection class='textscan' directory='D:/Excel R Project 2/CRM Project/CRM Project/Dataset' filename='Oppertuninty Table.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='Opportunity Product' name='textscan.0gd9j860ibf6z418yculr09mkdiq'>
+            <connection class='textscan' directory='D:/Excel R Project 2/CRM Project/CRM Project/Dataset' filename='Opportunity Product.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='User Table' name='textscan.1naux960tpuwn11h5wj3l19ji3hc'>
+            <connection class='textscan' directory='D:/Excel R Project 2/CRM Project/CRM Project/Dataset' filename='User Table.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.0t37suk1o9o4s4187d7ra0fbj9k9' name='Account.csv' table='[Account#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Account ID' ordinal='0' />
+              <column datatype='string' name='Account Name' ordinal='1' />
+              <column datatype='string' name='Account Rating' ordinal='2' />
+              <column datatype='string' name='Account Type' ordinal='3' />
+              <column datatype='string' name='Billing Country' ordinal='4' />
+              <column datatype='string' name='Created By ID' ordinal='5' />
+              <column datatype='datetime' name='Created Date' ordinal='6' />
+              <column datatype='string' name='Industry' ordinal='7' />
+              <column datatype='date' name='Last Activity' ordinal='8' />
+              <column datatype='string' name='Last Modified By ID' ordinal='9' />
+              <column datatype='datetime' name='Last Modified Date' ordinal='10' />
+              <column datatype='string' name='Lead Type' ordinal='11' />
+              <column datatype='string' name='Owner ID' ordinal='12' />
+              <column datatype='string' name='Record Type ID' ordinal='13' />
+              <column datatype='datetime' name='System Modstamp' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1naux960tpuwn11h5wj3l19ji3hc' name='Lead.csv' table='[Lead#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='boolean' name='Converted' ordinal='0' />
+              <column datatype='string' name='Converted Account ID' ordinal='1' />
+              <column datatype='string' name='Converted Opportunity ID' ordinal='2' />
+              <column datatype='string' name='Country' ordinal='3' />
+              <column datatype='datetime' name='Created Date' ordinal='4' />
+              <column datatype='string' name='Dead Reason' ordinal='5' />
+              <column datatype='string' name='Industry' ordinal='6' />
+              <column datatype='date' name='Last Status Change' ordinal='7' />
+              <column datatype='string' name='Lead ID' ordinal='8' />
+              <column datatype='string' name='Lead Source' ordinal='9' />
+              <column datatype='string' name='Lead Type' ordinal='10' />
+              <column datatype='string' name='LeadRecordType' ordinal='11' />
+              <column datatype='string' name='Primary Application' ordinal='12' />
+              <column datatype='string' name='Product Category' ordinal='13' />
+              <column datatype='string' name='Record Type ID' ordinal='14' />
+              <column datatype='string' name='Status' ordinal='15' />
+              <column datatype='string' name='Status (Simplified)' ordinal='16' />
+              <column datatype='integer' name='# Converted Accounts' ordinal='17' />
+              <column datatype='integer' name='# Converted Opportunities' ordinal='18' />
+              <column datatype='integer' name='Campaign Membership Count' ordinal='19' />
+              <column datatype='real' name='Conversion Rate' ordinal='20' />
+              <column datatype='string' name='Lead Score' ordinal='21' />
+              <column datatype='integer' name='Total Leads' ordinal='22' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1naux960tpuwn11h5wj3l19ji3hc' name='Oppertuninty Table.csv' table='[Oppertuninty Table#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Account ID' ordinal='0' />
+              <column datatype='date' name='Close Date' ordinal='1' />
+              <column datatype='boolean' name='Closed' ordinal='2' />
+              <column datatype='string' name='Contact ID' ordinal='3' />
+              <column datatype='string' name='Created By ID' ordinal='4' />
+              <column datatype='boolean' name='Created by Lead Conversion' ordinal='5' />
+              <column datatype='datetime' name='Created Date' ordinal='6' />
+              <column datatype='string' name='Fiscal Period' ordinal='7' />
+              <column datatype='string' name='Forecast Category' ordinal='8' />
+              <column datatype='string' name='Industry' ordinal='9' />
+              <column datatype='date' name='Last Activity' ordinal='10' />
+              <column datatype='string' name='Last Modified By ID' ordinal='11' />
+              <column datatype='datetime' name='Last Modified Date' ordinal='12' />
+              <column datatype='datetime' name='Last Stage Change Date' ordinal='13' />
+              <column datatype='string' name='Lead Source' ordinal='14' />
+              <column datatype='string' name='Opportunity ID' ordinal='15' />
+              <column datatype='string' name='Owner ID' ordinal='16' />
+              <column datatype='string' name='Price Book ID' ordinal='17' />
+              <column datatype='string' name='Quote ID' ordinal='18' />
+              <column datatype='string' name='Record Type ID' ordinal='19' />
+              <column datatype='string' name='Stage' ordinal='20' />
+              <column datatype='datetime' name='System Modstamp' ordinal='21' />
+              <column datatype='real' name='Amount' ordinal='22' />
+              <column datatype='real' name='Expected Amount' ordinal='23' />
+              <column datatype='integer' name='Probability (%)' ordinal='24' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1naux960tpuwn11h5wj3l19ji3hc' name='Opportunity Product.csv' table='[Opportunity Product#csv]' type='table'>
+            <columns character-set='ISO_8859-2:1987' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Created By ID' ordinal='0' />
+              <column datatype='datetime' name='Created Date' ordinal='1' />
+              <column datatype='string' name='Last Modified By ID' ordinal='2' />
+              <column datatype='datetime' name='Last Modified Date' ordinal='3' />
+              <column datatype='string' name='Line Item ID' ordinal='4' />
+              <column datatype='string' name='Opportunity ID' ordinal='5' />
+              <column datatype='string' name='Product Name' ordinal='6' />
+              <column datatype='string' name='Price Book Entry ID' ordinal='7' />
+              <column datatype='string' name='Product Code' ordinal='8' />
+              <column datatype='string' name='Product ID' ordinal='9' />
+              <column datatype='datetime' name='System Modstamp' ordinal='10' />
+              <column datatype='real' name='List Price' ordinal='11' />
+              <column datatype='integer' name='Quantity' ordinal='12' />
+              <column datatype='real' name='Sales Price' ordinal='13' />
+              <column datatype='integer' name='Sort Order' ordinal='14' />
+              <column datatype='real' name='Subtotal' ordinal='15' />
+              <column datatype='real' name='Total Price' ordinal='16' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1naux960tpuwn11h5wj3l19ji3hc' name='User Table.csv' table='[User Table#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Created By ID' ordinal='0' />
+              <column datatype='datetime' name='Created Date' ordinal='1' />
+              <column datatype='string' name='Department' ordinal='2' />
+              <column datatype='string' name='Full Name' ordinal='3' />
+              <column datatype='datetime' name='Last Login' ordinal='4' />
+              <column datatype='string' name='Last Modified By ID' ordinal='5' />
+              <column datatype='datetime' name='Last Modified Date' ordinal='6' />
+              <column datatype='string' name='Manager ID' ordinal='7' />
+              <column datatype='string' name='Profile ID' ordinal='8' />
+              <column datatype='string' name='Role ID' ordinal='9' />
+              <column datatype='datetime' name='System Modstamp' ordinal='10' />
+              <column datatype='string' name='User ID' ordinal='11' />
+              <column datatype='string' name='User Type' ordinal='12' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[# Converted Accounts]' value='[Lead.csv].[# Converted Accounts]' />
+          <map key='[# Converted Opportunities]' value='[Lead.csv].[# Converted Opportunities]' />
+          <map key='[Account ID (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv].[Account ID]' />
+          <map key='[Account ID]' value='[Account.csv].[Account ID]' />
+          <map key='[Account Name]' value='[Account.csv].[Account Name]' />
+          <map key='[Account Rating]' value='[Account.csv].[Account Rating]' />
+          <map key='[Account Type]' value='[Account.csv].[Account Type]' />
+          <map key='[Amount]' value='[Oppertuninty Table.csv].[Amount]' />
+          <map key='[Billing Country]' value='[Account.csv].[Billing Country]' />
+          <map key='[Campaign Membership Count]' value='[Lead.csv].[Campaign Membership Count]' />
+          <map key='[Close Date]' value='[Oppertuninty Table.csv].[Close Date]' />
+          <map key='[Closed]' value='[Oppertuninty Table.csv].[Closed]' />
+          <map key='[Contact ID]' value='[Oppertuninty Table.csv].[Contact ID]' />
+          <map key='[Conversion Rate]' value='[Lead.csv].[Conversion Rate]' />
+          <map key='[Converted Account ID]' value='[Lead.csv].[Converted Account ID]' />
+          <map key='[Converted Opportunity ID]' value='[Lead.csv].[Converted Opportunity ID]' />
+          <map key='[Converted]' value='[Lead.csv].[Converted]' />
+          <map key='[Country]' value='[Lead.csv].[Country]' />
+          <map key='[Created By ID (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv].[Created By ID]' />
+          <map key='[Created By ID (Opportunity Product.csv)]' value='[Opportunity Product.csv].[Created By ID]' />
+          <map key='[Created By ID (User Table.csv)]' value='[User Table.csv].[Created By ID]' />
+          <map key='[Created By ID]' value='[Account.csv].[Created By ID]' />
+          <map key='[Created Date (Lead.csv)]' value='[Lead.csv].[Created Date]' />
+          <map key='[Created Date (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv].[Created Date]' />
+          <map key='[Created Date (Opportunity Product.csv)]' value='[Opportunity Product.csv].[Created Date]' />
+          <map key='[Created Date (User Table.csv)]' value='[User Table.csv].[Created Date]' />
+          <map key='[Created Date]' value='[Account.csv].[Created Date]' />
+          <map key='[Created by Lead Conversion]' value='[Oppertuninty Table.csv].[Created by Lead Conversion]' />
+          <map key='[Dead Reason]' value='[Lead.csv].[Dead Reason]' />
+          <map key='[Department]' value='[User Table.csv].[Department]' />
+          <map key='[Expected Amount]' value='[Oppertuninty Table.csv].[Expected Amount]' />
+          <map key='[Fiscal Period]' value='[Oppertuninty Table.csv].[Fiscal Period]' />
+          <map key='[Forecast Category]' value='[Oppertuninty Table.csv].[Forecast Category]' />
+          <map key='[Full Name]' value='[User Table.csv].[Full Name]' />
+          <map key='[Industry (Lead.csv)]' value='[Lead.csv].[Industry]' />
+          <map key='[Industry (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv].[Industry]' />
+          <map key='[Industry]' value='[Account.csv].[Industry]' />
+          <map key='[Last Activity (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv].[Last Activity]' />
+          <map key='[Last Activity]' value='[Account.csv].[Last Activity]' />
+          <map key='[Last Login]' value='[User Table.csv].[Last Login]' />
+          <map key='[Last Modified By ID (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv].[Last Modified By ID]' />
+          <map key='[Last Modified By ID (Opportunity Product.csv)]' value='[Opportunity Product.csv].[Last Modified By ID]' />
+          <map key='[Last Modified By ID (User Table.csv)]' value='[User Table.csv].[Last Modified By ID]' />
+          <map key='[Last Modified By ID]' value='[Account.csv].[Last Modified By ID]' />
+          <map key='[Last Modified Date (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv].[Last Modified Date]' />
+          <map key='[Last Modified Date (Opportunity Product.csv)]' value='[Opportunity Product.csv].[Last Modified Date]' />
+          <map key='[Last Modified Date (User Table.csv)]' value='[User Table.csv].[Last Modified Date]' />
+          <map key='[Last Modified Date]' value='[Account.csv].[Last Modified Date]' />
+          <map key='[Last Stage Change Date]' value='[Oppertuninty Table.csv].[Last Stage Change Date]' />
+          <map key='[Last Status Change]' value='[Lead.csv].[Last Status Change]' />
+          <map key='[Lead ID]' value='[Lead.csv].[Lead ID]' />
+          <map key='[Lead Score]' value='[Lead.csv].[Lead Score]' />
+          <map key='[Lead Source (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv].[Lead Source]' />
+          <map key='[Lead Source]' value='[Lead.csv].[Lead Source]' />
+          <map key='[Lead Type (Lead.csv)]' value='[Lead.csv].[Lead Type]' />
+          <map key='[Lead Type]' value='[Account.csv].[Lead Type]' />
+          <map key='[LeadRecordType]' value='[Lead.csv].[LeadRecordType]' />
+          <map key='[Line Item ID]' value='[Opportunity Product.csv].[Line Item ID]' />
+          <map key='[List Price]' value='[Opportunity Product.csv].[List Price]' />
+          <map key='[Manager ID]' value='[User Table.csv].[Manager ID]' />
+          <map key='[Opportunity ID (Opportunity Product.csv)]' value='[Opportunity Product.csv].[Opportunity ID]' />
+          <map key='[Opportunity ID]' value='[Oppertuninty Table.csv].[Opportunity ID]' />
+          <map key='[Owner ID (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv].[Owner ID]' />
+          <map key='[Owner ID]' value='[Account.csv].[Owner ID]' />
+          <map key='[Price Book Entry ID]' value='[Opportunity Product.csv].[Price Book Entry ID]' />
+          <map key='[Price Book ID]' value='[Oppertuninty Table.csv].[Price Book ID]' />
+          <map key='[Primary Application]' value='[Lead.csv].[Primary Application]' />
+          <map key='[Probability (%)]' value='[Oppertuninty Table.csv].[Probability (%)]' />
+          <map key='[Product Category]' value='[Lead.csv].[Product Category]' />
+          <map key='[Product Code]' value='[Opportunity Product.csv].[Product Code]' />
+          <map key='[Product ID]' value='[Opportunity Product.csv].[Product ID]' />
+          <map key='[Product Name]' value='[Opportunity Product.csv].[Product Name]' />
+          <map key='[Profile ID]' value='[User Table.csv].[Profile ID]' />
+          <map key='[Quantity]' value='[Opportunity Product.csv].[Quantity]' />
+          <map key='[Quote ID]' value='[Oppertuninty Table.csv].[Quote ID]' />
+          <map key='[Record Type ID (Lead.csv)]' value='[Lead.csv].[Record Type ID]' />
+          <map key='[Record Type ID (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv].[Record Type ID]' />
+          <map key='[Record Type ID]' value='[Account.csv].[Record Type ID]' />
+          <map key='[Role ID]' value='[User Table.csv].[Role ID]' />
+          <map key='[Sales Price]' value='[Opportunity Product.csv].[Sales Price]' />
+          <map key='[Sort Order]' value='[Opportunity Product.csv].[Sort Order]' />
+          <map key='[Stage]' value='[Oppertuninty Table.csv].[Stage]' />
+          <map key='[Status (Simplified)]' value='[Lead.csv].[Status (Simplified)]' />
+          <map key='[Status]' value='[Lead.csv].[Status]' />
+          <map key='[Subtotal]' value='[Opportunity Product.csv].[Subtotal]' />
+          <map key='[System Modstamp (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv].[System Modstamp]' />
+          <map key='[System Modstamp (Opportunity Product.csv)]' value='[Opportunity Product.csv].[System Modstamp]' />
+          <map key='[System Modstamp (User Table.csv)]' value='[User Table.csv].[System Modstamp]' />
+          <map key='[System Modstamp]' value='[Account.csv].[System Modstamp]' />
+          <map key='[Total Leads]' value='[Lead.csv].[Total Leads]' />
+          <map key='[Total Price]' value='[Opportunity Product.csv].[Total Price]' />
+          <map key='[User ID]' value='[User Table.csv].[User ID]' />
+          <map key='[User Type]' value='[User Table.csv].[User Type]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Account.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ibm-912_P100-1995&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[User Table.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Account ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Account ID]</local-name>
+            <parent-name>[Account.csv]</parent-name>
+            <remote-alias>Account ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Account Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Account Name]</local-name>
+            <parent-name>[Account.csv]</parent-name>
+            <remote-alias>Account Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Account Rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Account Rating]</local-name>
+            <parent-name>[Account.csv]</parent-name>
+            <remote-alias>Account Rating</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Account Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Account Type]</local-name>
+            <parent-name>[Account.csv]</parent-name>
+            <remote-alias>Account Type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Billing Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Billing Country]</local-name>
+            <parent-name>[Account.csv]</parent-name>
+            <remote-alias>Billing Country</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Created By ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Created By ID]</local-name>
+            <parent-name>[Account.csv]</parent-name>
+            <remote-alias>Created By ID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Created Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Created Date]</local-name>
+            <parent-name>[Account.csv]</parent-name>
+            <remote-alias>Created Date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Industry</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Industry]</local-name>
+            <parent-name>[Account.csv]</parent-name>
+            <remote-alias>Industry</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Activity</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Last Activity]</local-name>
+            <parent-name>[Account.csv]</parent-name>
+            <remote-alias>Last Activity</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Modified By ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Last Modified By ID]</local-name>
+            <parent-name>[Account.csv]</parent-name>
+            <remote-alias>Last Modified By ID</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Modified Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Last Modified Date]</local-name>
+            <parent-name>[Account.csv]</parent-name>
+            <remote-alias>Last Modified Date</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lead Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lead Type]</local-name>
+            <parent-name>[Account.csv]</parent-name>
+            <remote-alias>Lead Type</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Owner ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Owner ID]</local-name>
+            <parent-name>[Account.csv]</parent-name>
+            <remote-alias>Owner ID</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Record Type ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Record Type ID]</local-name>
+            <parent-name>[Account.csv]</parent-name>
+            <remote-alias>Record Type ID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>System Modstamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[System Modstamp]</local-name>
+            <parent-name>[Account.csv]</parent-name>
+            <remote-alias>System Modstamp</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Converted</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Converted]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Converted</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Converted Account ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Converted Account ID]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Converted Account ID</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Converted Opportunity ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Converted Opportunity ID]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Converted Opportunity ID</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Created Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Created Date (Lead.csv)]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Created Date</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dead Reason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dead Reason]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Dead Reason</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Industry</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Industry (Lead.csv)]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Industry</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Status Change</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Last Status Change]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Last Status Change</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lead ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lead ID]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Lead ID</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lead Source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lead Source]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Lead Source</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lead Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lead Type (Lead.csv)]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Lead Type</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LeadRecordType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LeadRecordType]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>LeadRecordType</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary Application</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Primary Application]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Primary Application</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product Category]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Product Category</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Record Type ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Record Type ID (Lead.csv)]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Record Type ID</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status (Simplified)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Status (Simplified)]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Status (Simplified)</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name># Converted Accounts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[# Converted Accounts]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias># Converted Accounts</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name># Converted Opportunities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[# Converted Opportunities]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias># Converted Opportunities</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Campaign Membership Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Campaign Membership Count]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Campaign Membership Count</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Conversion Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Conversion Rate]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Conversion Rate</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lead Score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lead Score]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Lead Score</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Leads</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Leads]</local-name>
+            <parent-name>[Lead.csv]</parent-name>
+            <remote-alias>Total Leads</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Account ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Account ID (Oppertuninty Table.csv)]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Account ID</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Close Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Close Date]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Close Date</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closed</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Closed]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Closed</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contact ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Contact ID]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Contact ID</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Created By ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Created By ID (Oppertuninty Table.csv)]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Created By ID</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Created by Lead Conversion</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Created by Lead Conversion]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Created by Lead Conversion</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Created Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Created Date (Oppertuninty Table.csv)]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Created Date</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fiscal Period</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fiscal Period]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Fiscal Period</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Forecast Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Forecast Category]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Forecast Category</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Industry</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Industry (Oppertuninty Table.csv)]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Industry</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Activity</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Last Activity (Oppertuninty Table.csv)]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Last Activity</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Modified By ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Last Modified By ID (Oppertuninty Table.csv)]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Last Modified By ID</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Modified Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Last Modified Date (Oppertuninty Table.csv)]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Last Modified Date</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Stage Change Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Last Stage Change Date]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Last Stage Change Date</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lead Source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lead Source (Oppertuninty Table.csv)]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Lead Source</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opportunity ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Opportunity ID]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Opportunity ID</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Owner ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Owner ID (Oppertuninty Table.csv)]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Owner ID</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price Book ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Price Book ID]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Price Book ID</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quote ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Quote ID]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Quote ID</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Record Type ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Record Type ID (Oppertuninty Table.csv)]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Record Type ID</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stage]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Stage</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>System Modstamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[System Modstamp (Oppertuninty Table.csv)]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>System Modstamp</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Amount]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Amount</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Expected Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Expected Amount]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Expected Amount</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Probability (%)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Probability (%)]</local-name>
+            <parent-name>[Oppertuninty Table.csv]</parent-name>
+            <remote-alias>Probability (%)</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Created By ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Created By ID (Opportunity Product.csv)]</local-name>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias>Created By ID</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Created Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Created Date (Opportunity Product.csv)]</local-name>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias>Created Date</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Modified By ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Last Modified By ID (Opportunity Product.csv)]</local-name>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias>Last Modified By ID</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Modified Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Last Modified Date (Opportunity Product.csv)]</local-name>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias>Last Modified Date</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Line Item ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Line Item ID]</local-name>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias>Line Item ID</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opportunity ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Opportunity ID (Opportunity Product.csv)]</local-name>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias>Opportunity ID</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product Name]</local-name>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias>Product Name</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price Book Entry ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Price Book Entry ID]</local-name>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias>Price Book Entry ID</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product Code]</local-name>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias>Product Code</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product ID]</local-name>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias>Product ID</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>System Modstamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[System Modstamp (Opportunity Product.csv)]</local-name>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias>System Modstamp</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>List Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[List Price]</local-name>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias>List Price</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales Price]</local-name>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias>Sales Price</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sort Order</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sort Order]</local-name>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias>Sort Order</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subtotal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Subtotal]</local-name>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias>Subtotal</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Price]</local-name>
+            <parent-name>[Opportunity Product.csv]</parent-name>
+            <remote-alias>Total Price</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Created By ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Created By ID (User Table.csv)]</local-name>
+            <parent-name>[User Table.csv]</parent-name>
+            <remote-alias>Created By ID</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Created Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Created Date (User Table.csv)]</local-name>
+            <parent-name>[User Table.csv]</parent-name>
+            <remote-alias>Created Date</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Department</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Department]</local-name>
+            <parent-name>[User Table.csv]</parent-name>
+            <remote-alias>Department</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Full Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Full Name]</local-name>
+            <parent-name>[User Table.csv]</parent-name>
+            <remote-alias>Full Name</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Login</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Last Login]</local-name>
+            <parent-name>[User Table.csv]</parent-name>
+            <remote-alias>Last Login</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Modified By ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Last Modified By ID (User Table.csv)]</local-name>
+            <parent-name>[User Table.csv]</parent-name>
+            <remote-alias>Last Modified By ID</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Modified Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Last Modified Date (User Table.csv)]</local-name>
+            <parent-name>[User Table.csv]</parent-name>
+            <remote-alias>Last Modified Date</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Manager ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Manager ID]</local-name>
+            <parent-name>[User Table.csv]</parent-name>
+            <remote-alias>Manager ID</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profile ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Profile ID]</local-name>
+            <parent-name>[User Table.csv]</parent-name>
+            <remote-alias>Profile ID</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Role ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Role ID]</local-name>
+            <parent-name>[User Table.csv]</parent-name>
+            <remote-alias>Role ID</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>System Modstamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[System Modstamp (User Table.csv)]</local-name>
+            <parent-name>[User Table.csv]</parent-name>
+            <remote-alias>System Modstamp</remote-alias>
+            <ordinal>90</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[User ID]</local-name>
+            <parent-name>[User Table.csv]</parent-name>
+            <remote-alias>User ID</remote-alias>
+            <ordinal>91</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[User Type]</local-name>
+            <parent-name>[User Table.csv]</parent-name>
+            <remote-alias>User Type</remote-alias>
+            <ordinal>92</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Billing Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Lead Record Type' datatype='string' name='[LeadRecordType]' role='dimension' type='nominal' />
+      <column caption='Account.csv' datatype='table' name='[__tableau_internal_object_id__].[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]' role='measure' type='quantitative' />
+      <column caption='Lead.csv' datatype='table' name='[__tableau_internal_object_id__].[Lead.csv_975AF6774C044235AC99555716513DC6]' role='measure' type='quantitative' />
+      <column caption='Oppertuninty Table.csv' datatype='table' name='[__tableau_internal_object_id__].[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]' role='measure' type='quantitative' />
+      <column caption='Opportunity Product.csv' datatype='table' name='[__tableau_internal_object_id__].[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]' role='measure' type='quantitative' />
+      <column caption='User Table.csv' datatype='table' name='[__tableau_internal_object_id__].[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/HP/AppData/Local/Temp/TableauTemp/#TableauTemp_11dgj7x1d22ay010r3hfg088jtkx.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/12/2026 03:34:09 PM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD' table='[Extract].[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]' type='table' />
+            <relation name='Lead.csv_975AF6774C044235AC99555716513DC6' table='[Extract].[Lead.csv_975AF6774C044235AC99555716513DC6]' type='table' />
+            <relation name='Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A' table='[Extract].[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]' type='table' />
+            <relation name='Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52' table='[Extract].[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]' type='table' />
+            <relation name='User Table.csv_1171738D4C8E4AA4985186EBCA135A70' table='[Extract].[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]' type='table' />
+          </relation>
+          <cols>
+            <map key='[# Converted Accounts]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[# Converted Accounts]' />
+            <map key='[# Converted Opportunities]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[# Converted Opportunities]' />
+            <map key='[Account ID (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Account ID]' />
+            <map key='[Account ID]' value='[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD].[Account ID]' />
+            <map key='[Account Name]' value='[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD].[Account Name]' />
+            <map key='[Account Rating]' value='[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD].[Account Rating]' />
+            <map key='[Account Type]' value='[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD].[Account Type]' />
+            <map key='[Amount]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Amount]' />
+            <map key='[Billing Country]' value='[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD].[Billing Country]' />
+            <map key='[Campaign Membership Count]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Campaign Membership Count]' />
+            <map key='[Close Date]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Close Date]' />
+            <map key='[Closed]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Closed]' />
+            <map key='[Contact ID]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Contact ID]' />
+            <map key='[Conversion Rate]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Conversion Rate]' />
+            <map key='[Converted Account ID]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Converted Account ID]' />
+            <map key='[Converted Opportunity ID]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Converted Opportunity ID]' />
+            <map key='[Converted]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Converted]' />
+            <map key='[Country]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Country]' />
+            <map key='[Created By ID (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Created By ID]' />
+            <map key='[Created By ID (Opportunity Product.csv)]' value='[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52].[Created By ID]' />
+            <map key='[Created By ID (User Table.csv)]' value='[User Table.csv_1171738D4C8E4AA4985186EBCA135A70].[Created By ID]' />
+            <map key='[Created By ID]' value='[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD].[Created By ID]' />
+            <map key='[Created Date (Lead.csv)]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Created Date]' />
+            <map key='[Created Date (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Created Date]' />
+            <map key='[Created Date (Opportunity Product.csv)]' value='[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52].[Created Date]' />
+            <map key='[Created Date (User Table.csv)]' value='[User Table.csv_1171738D4C8E4AA4985186EBCA135A70].[Created Date]' />
+            <map key='[Created Date]' value='[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD].[Created Date]' />
+            <map key='[Created by Lead Conversion]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Created by Lead Conversion]' />
+            <map key='[Dead Reason]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Dead Reason]' />
+            <map key='[Department]' value='[User Table.csv_1171738D4C8E4AA4985186EBCA135A70].[Department]' />
+            <map key='[Expected Amount]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Expected Amount]' />
+            <map key='[Fiscal Period]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Fiscal Period]' />
+            <map key='[Forecast Category]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Forecast Category]' />
+            <map key='[Full Name]' value='[User Table.csv_1171738D4C8E4AA4985186EBCA135A70].[Full Name]' />
+            <map key='[Industry (Lead.csv)]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Industry]' />
+            <map key='[Industry (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Industry]' />
+            <map key='[Industry]' value='[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD].[Industry]' />
+            <map key='[Last Activity (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Last Activity]' />
+            <map key='[Last Activity]' value='[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD].[Last Activity]' />
+            <map key='[Last Login]' value='[User Table.csv_1171738D4C8E4AA4985186EBCA135A70].[Last Login]' />
+            <map key='[Last Modified By ID (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Last Modified By ID]' />
+            <map key='[Last Modified By ID (Opportunity Product.csv)]' value='[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52].[Last Modified By ID]' />
+            <map key='[Last Modified By ID (User Table.csv)]' value='[User Table.csv_1171738D4C8E4AA4985186EBCA135A70].[Last Modified By ID]' />
+            <map key='[Last Modified By ID]' value='[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD].[Last Modified By ID]' />
+            <map key='[Last Modified Date (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Last Modified Date]' />
+            <map key='[Last Modified Date (Opportunity Product.csv)]' value='[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52].[Last Modified Date]' />
+            <map key='[Last Modified Date (User Table.csv)]' value='[User Table.csv_1171738D4C8E4AA4985186EBCA135A70].[Last Modified Date]' />
+            <map key='[Last Modified Date]' value='[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD].[Last Modified Date]' />
+            <map key='[Last Stage Change Date]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Last Stage Change Date]' />
+            <map key='[Last Status Change]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Last Status Change]' />
+            <map key='[Lead ID]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Lead ID]' />
+            <map key='[Lead Score]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Lead Score]' />
+            <map key='[Lead Source (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Lead Source]' />
+            <map key='[Lead Source]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Lead Source]' />
+            <map key='[Lead Type (Lead.csv)]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Lead Type]' />
+            <map key='[Lead Type]' value='[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD].[Lead Type]' />
+            <map key='[LeadRecordType]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[LeadRecordType]' />
+            <map key='[Line Item ID]' value='[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52].[Line Item ID]' />
+            <map key='[List Price]' value='[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52].[List Price]' />
+            <map key='[Manager ID]' value='[User Table.csv_1171738D4C8E4AA4985186EBCA135A70].[Manager ID]' />
+            <map key='[Opportunity ID (Opportunity Product.csv)]' value='[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52].[Opportunity ID]' />
+            <map key='[Opportunity ID]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Opportunity ID]' />
+            <map key='[Owner ID (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Owner ID]' />
+            <map key='[Owner ID]' value='[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD].[Owner ID]' />
+            <map key='[Price Book Entry ID]' value='[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52].[Price Book Entry ID]' />
+            <map key='[Price Book ID]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Price Book ID]' />
+            <map key='[Primary Application]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Primary Application]' />
+            <map key='[Probability (%)]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Probability (%)]' />
+            <map key='[Product Category]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Product Category]' />
+            <map key='[Product Code]' value='[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52].[Product Code]' />
+            <map key='[Product ID]' value='[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52].[Product ID]' />
+            <map key='[Product Name]' value='[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52].[Product Name]' />
+            <map key='[Profile ID]' value='[User Table.csv_1171738D4C8E4AA4985186EBCA135A70].[Profile ID]' />
+            <map key='[Quantity]' value='[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52].[Quantity]' />
+            <map key='[Quote ID]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Quote ID]' />
+            <map key='[Record Type ID (Lead.csv)]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Record Type ID]' />
+            <map key='[Record Type ID (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Record Type ID]' />
+            <map key='[Record Type ID]' value='[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD].[Record Type ID]' />
+            <map key='[Role ID]' value='[User Table.csv_1171738D4C8E4AA4985186EBCA135A70].[Role ID]' />
+            <map key='[Sales Price]' value='[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52].[Sales Price]' />
+            <map key='[Sort Order]' value='[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52].[Sort Order]' />
+            <map key='[Stage]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[Stage]' />
+            <map key='[Status (Simplified)]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Status (Simplified)]' />
+            <map key='[Status]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Status]' />
+            <map key='[Subtotal]' value='[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52].[Subtotal]' />
+            <map key='[System Modstamp (Oppertuninty Table.csv)]' value='[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A].[System Modstamp]' />
+            <map key='[System Modstamp (Opportunity Product.csv)]' value='[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52].[System Modstamp]' />
+            <map key='[System Modstamp (User Table.csv)]' value='[User Table.csv_1171738D4C8E4AA4985186EBCA135A70].[System Modstamp]' />
+            <map key='[System Modstamp]' value='[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD].[System Modstamp]' />
+            <map key='[Total Leads]' value='[Lead.csv_975AF6774C044235AC99555716513DC6].[Total Leads]' />
+            <map key='[Total Price]' value='[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52].[Total Price]' />
+            <map key='[User ID]' value='[User Table.csv_1171738D4C8E4AA4985186EBCA135A70].[User ID]' />
+            <map key='[User Type]' value='[User Table.csv_1171738D4C8E4AA4985186EBCA135A70].[User Type]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Account ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Account ID]</local-name>
+              <parent-name>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</parent-name>
+              <remote-alias>Account ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Account.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3053</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Account Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Account Name]</local-name>
+              <parent-name>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</parent-name>
+              <remote-alias>Account Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Account.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1182</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Account Rating</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Account Rating]</local-name>
+              <parent-name>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</parent-name>
+              <remote-alias>Account Rating</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Account.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Account Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Account Type]</local-name>
+              <parent-name>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</parent-name>
+              <remote-alias>Account Type</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Account.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Billing Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Billing Country]</local-name>
+              <parent-name>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</parent-name>
+              <remote-alias>Billing Country</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Account.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Created By ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Created By ID]</local-name>
+              <parent-name>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</parent-name>
+              <remote-alias>Created By ID</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Account.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Created Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Created Date]</local-name>
+              <parent-name>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</parent-name>
+              <remote-alias>Created Date</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Account.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2047</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Industry</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Industry]</local-name>
+              <parent-name>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</parent-name>
+              <remote-alias>Industry</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Account.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Activity</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Last Activity]</local-name>
+              <parent-name>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</parent-name>
+              <remote-alias>Last Activity</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Account.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>393</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Modified By ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Last Modified By ID]</local-name>
+              <parent-name>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</parent-name>
+              <remote-alias>Last Modified By ID</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Account.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Modified Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Last Modified Date]</local-name>
+              <parent-name>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</parent-name>
+              <remote-alias>Last Modified Date</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Account.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>707</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lead Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Lead Type]</local-name>
+              <parent-name>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</parent-name>
+              <remote-alias>Lead Type</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Account.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Owner ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Owner ID]</local-name>
+              <parent-name>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</parent-name>
+              <remote-alias>Owner ID</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Account.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Record Type ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Record Type ID]</local-name>
+              <parent-name>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</parent-name>
+              <remote-alias>Record Type ID</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Account.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>System Modstamp</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[System Modstamp]</local-name>
+              <parent-name>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</parent-name>
+              <remote-alias>System Modstamp</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Account.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Converted</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Converted]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Converted</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Lead.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Converted Account ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Converted Account ID]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Converted Account ID</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Lead.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>845</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Converted Opportunity ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Converted Opportunity ID]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Converted Opportunity ID</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Lead.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>668</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Lead.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>154</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Created Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Created Date (Lead.csv)]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Created Date</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Lead.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1816</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dead Reason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Dead Reason]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Dead Reason</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Lead.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Industry</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Industry (Lead.csv)]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Industry</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Lead.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Status Change</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Last Status Change]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Last Status Change</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Lead.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>377</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lead ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Lead ID]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Lead ID</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Lead.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lead Source</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Lead Source]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Lead Source</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Lead.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lead Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Lead Type (Lead.csv)]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Lead Type</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Lead.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LeadRecordType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LeadRecordType]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>LeadRecordType</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Lead.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Primary Application</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Primary Application]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Primary Application</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Lead.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product Category]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Product Category</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Lead.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Record Type ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Record Type ID (Lead.csv)]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Record Type ID</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Lead.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Status]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Status</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Lead.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Status (Simplified)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Status (Simplified)]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Status (Simplified)</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Lead.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name># Converted Accounts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[# Converted Accounts]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias># Converted Accounts</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Lead.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name># Converted Opportunities</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[# Converted Opportunities]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias># Converted Opportunities</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Lead.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Campaign Membership Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Campaign Membership Count]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Campaign Membership Count</remote-alias>
+              <ordinal>34</ordinal>
+              <family>Lead.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Conversion Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Conversion Rate]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Conversion Rate</remote-alias>
+              <ordinal>35</ordinal>
+              <family>Lead.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lead Score</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Lead Score]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Lead Score</remote-alias>
+              <ordinal>36</ordinal>
+              <family>Lead.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Leads</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Leads]</local-name>
+              <parent-name>[Lead.csv_975AF6774C044235AC99555716513DC6]</parent-name>
+              <remote-alias>Total Leads</remote-alias>
+              <ordinal>37</ordinal>
+              <family>Lead.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Lead.csv_975AF6774C044235AC99555716513DC6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Account ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Account ID (Oppertuninty Table.csv)]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Account ID</remote-alias>
+              <ordinal>38</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1328</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Close Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Close Date]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Close Date</remote-alias>
+              <ordinal>39</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>825</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Closed</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Closed]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Closed</remote-alias>
+              <ordinal>40</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Contact ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Contact ID]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Contact ID</remote-alias>
+              <ordinal>41</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1584</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Created By ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Created By ID (Oppertuninty Table.csv)]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Created By ID</remote-alias>
+              <ordinal>42</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Created by Lead Conversion</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Created by Lead Conversion]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Created by Lead Conversion</remote-alias>
+              <ordinal>43</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Created Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Created Date (Oppertuninty Table.csv)]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Created Date</remote-alias>
+              <ordinal>44</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>4051</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fiscal Period</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Fiscal Period]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Fiscal Period</remote-alias>
+              <ordinal>45</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Forecast Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Forecast Category]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Forecast Category</remote-alias>
+              <ordinal>46</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Industry</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Industry (Oppertuninty Table.csv)]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Industry</remote-alias>
+              <ordinal>47</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Activity</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Last Activity (Oppertuninty Table.csv)]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Last Activity</remote-alias>
+              <ordinal>48</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>683</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Modified By ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Last Modified By ID (Oppertuninty Table.csv)]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Last Modified By ID</remote-alias>
+              <ordinal>49</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Modified Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Last Modified Date (Oppertuninty Table.csv)]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Last Modified Date</remote-alias>
+              <ordinal>50</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>672</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Stage Change Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Last Stage Change Date]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Last Stage Change Date</remote-alias>
+              <ordinal>51</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2290</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lead Source</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Lead Source (Oppertuninty Table.csv)]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Lead Source</remote-alias>
+              <ordinal>52</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Opportunity ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Opportunity ID]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Opportunity ID</remote-alias>
+              <ordinal>53</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4646</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Owner ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Owner ID (Oppertuninty Table.csv)]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Owner ID</remote-alias>
+              <ordinal>54</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price Book ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Price Book ID]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Price Book ID</remote-alias>
+              <ordinal>55</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quote ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Quote ID]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Quote ID</remote-alias>
+              <ordinal>56</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>546</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Record Type ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Record Type ID (Oppertuninty Table.csv)]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Record Type ID</remote-alias>
+              <ordinal>57</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Stage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Stage]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Stage</remote-alias>
+              <ordinal>58</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>System Modstamp</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[System Modstamp (Oppertuninty Table.csv)]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>System Modstamp</remote-alias>
+              <ordinal>59</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Amount]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Amount</remote-alias>
+              <ordinal>60</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1013</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Expected Amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Expected Amount]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Expected Amount</remote-alias>
+              <ordinal>61</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>910</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Probability (%)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Probability (%)]</local-name>
+              <parent-name>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</parent-name>
+              <remote-alias>Probability (%)</remote-alias>
+              <ordinal>62</ordinal>
+              <family>Oppertuninty Table.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Created By ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Created By ID (Opportunity Product.csv)]</local-name>
+              <parent-name>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</parent-name>
+              <remote-alias>Created By ID</remote-alias>
+              <ordinal>63</ordinal>
+              <family>Opportunity Product.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Created Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Created Date (Opportunity Product.csv)]</local-name>
+              <parent-name>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</parent-name>
+              <remote-alias>Created Date</remote-alias>
+              <ordinal>64</ordinal>
+              <family>Opportunity Product.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2820</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Modified By ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Last Modified By ID (Opportunity Product.csv)]</local-name>
+              <parent-name>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</parent-name>
+              <remote-alias>Last Modified By ID</remote-alias>
+              <ordinal>65</ordinal>
+              <family>Opportunity Product.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Modified Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Last Modified Date (Opportunity Product.csv)]</local-name>
+              <parent-name>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</parent-name>
+              <remote-alias>Last Modified Date</remote-alias>
+              <ordinal>66</ordinal>
+              <family>Opportunity Product.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2843</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Line Item ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Line Item ID]</local-name>
+              <parent-name>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</parent-name>
+              <remote-alias>Line Item ID</remote-alias>
+              <ordinal>67</ordinal>
+              <family>Opportunity Product.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Opportunity ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Opportunity ID (Opportunity Product.csv)]</local-name>
+              <parent-name>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</parent-name>
+              <remote-alias>Opportunity ID</remote-alias>
+              <ordinal>68</ordinal>
+              <family>Opportunity Product.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2551</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product Name]</local-name>
+              <parent-name>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</parent-name>
+              <remote-alias>Product Name</remote-alias>
+              <ordinal>69</ordinal>
+              <family>Opportunity Product.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price Book Entry ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Price Book Entry ID]</local-name>
+              <parent-name>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</parent-name>
+              <remote-alias>Price Book Entry ID</remote-alias>
+              <ordinal>70</ordinal>
+              <family>Opportunity Product.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>410</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product Code]</local-name>
+              <parent-name>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</parent-name>
+              <remote-alias>Product Code</remote-alias>
+              <ordinal>71</ordinal>
+              <family>Opportunity Product.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>196</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product ID]</local-name>
+              <parent-name>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</parent-name>
+              <remote-alias>Product ID</remote-alias>
+              <ordinal>72</ordinal>
+              <family>Opportunity Product.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>205</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>System Modstamp</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[System Modstamp (Opportunity Product.csv)]</local-name>
+              <parent-name>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</parent-name>
+              <remote-alias>System Modstamp</remote-alias>
+              <ordinal>73</ordinal>
+              <family>Opportunity Product.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2716</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>List Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[List Price]</local-name>
+              <parent-name>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</parent-name>
+              <remote-alias>List Price</remote-alias>
+              <ordinal>74</ordinal>
+              <family>Opportunity Product.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>165</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quantity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Quantity]</local-name>
+              <parent-name>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</parent-name>
+              <remote-alias>Quantity</remote-alias>
+              <ordinal>75</ordinal>
+              <family>Opportunity Product.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sales Price]</local-name>
+              <parent-name>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</parent-name>
+              <remote-alias>Sales Price</remote-alias>
+              <ordinal>76</ordinal>
+              <family>Opportunity Product.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>273</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sort Order</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sort Order]</local-name>
+              <parent-name>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</parent-name>
+              <remote-alias>Sort Order</remote-alias>
+              <ordinal>77</ordinal>
+              <family>Opportunity Product.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Subtotal</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Subtotal]</local-name>
+              <parent-name>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</parent-name>
+              <remote-alias>Subtotal</remote-alias>
+              <ordinal>78</ordinal>
+              <family>Opportunity Product.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>464</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total Price]</local-name>
+              <parent-name>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</parent-name>
+              <remote-alias>Total Price</remote-alias>
+              <ordinal>79</ordinal>
+              <family>Opportunity Product.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>816</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Created By ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Created By ID (User Table.csv)]</local-name>
+              <parent-name>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</parent-name>
+              <remote-alias>Created By ID</remote-alias>
+              <ordinal>80</ordinal>
+              <family>User Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Created Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Created Date (User Table.csv)]</local-name>
+              <parent-name>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</parent-name>
+              <remote-alias>Created Date</remote-alias>
+              <ordinal>81</ordinal>
+              <family>User Table.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>94</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Department</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Department]</local-name>
+              <parent-name>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</parent-name>
+              <remote-alias>Department</remote-alias>
+              <ordinal>82</ordinal>
+              <family>User Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Full Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Full Name]</local-name>
+              <parent-name>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</parent-name>
+              <remote-alias>Full Name</remote-alias>
+              <ordinal>83</ordinal>
+              <family>User Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>98</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Login</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Last Login]</local-name>
+              <parent-name>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</parent-name>
+              <remote-alias>Last Login</remote-alias>
+              <ordinal>84</ordinal>
+              <family>User Table.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Modified By ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Last Modified By ID (User Table.csv)]</local-name>
+              <parent-name>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</parent-name>
+              <remote-alias>Last Modified By ID</remote-alias>
+              <ordinal>85</ordinal>
+              <family>User Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Modified Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Last Modified Date (User Table.csv)]</local-name>
+              <parent-name>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</parent-name>
+              <remote-alias>Last Modified Date</remote-alias>
+              <ordinal>86</ordinal>
+              <family>User Table.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Manager ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Manager ID]</local-name>
+              <parent-name>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</parent-name>
+              <remote-alias>Manager ID</remote-alias>
+              <ordinal>87</ordinal>
+              <family>User Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Profile ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Profile ID]</local-name>
+              <parent-name>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</parent-name>
+              <remote-alias>Profile ID</remote-alias>
+              <ordinal>88</ordinal>
+              <family>User Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Role ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Role ID]</local-name>
+              <parent-name>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</parent-name>
+              <remote-alias>Role ID</remote-alias>
+              <ordinal>89</ordinal>
+              <family>User Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>System Modstamp</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[System Modstamp (User Table.csv)]</local-name>
+              <parent-name>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</parent-name>
+              <remote-alias>System Modstamp</remote-alias>
+              <ordinal>90</ordinal>
+              <family>User Table.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>User ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[User ID]</local-name>
+              <parent-name>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</parent-name>
+              <remote-alias>User ID</remote-alias>
+              <ordinal>91</ordinal>
+              <family>User Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>98</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>User Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[User Type]</local-name>
+              <parent-name>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</parent-name>
+              <remote-alias>User Type</remote-alias>
+              <ordinal>92</ordinal>
+              <family>User Table.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Account.csv' id='Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD'>
+            <properties context=''>
+              <relation connection='textscan.0t37suk1o9o4s4187d7ra0fbj9k9' name='Account.csv' table='[Account#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Account ID' ordinal='0' />
+                  <column datatype='string' name='Account Name' ordinal='1' />
+                  <column datatype='string' name='Account Rating' ordinal='2' />
+                  <column datatype='string' name='Account Type' ordinal='3' />
+                  <column datatype='string' name='Billing Country' ordinal='4' />
+                  <column datatype='string' name='Created By ID' ordinal='5' />
+                  <column datatype='datetime' name='Created Date' ordinal='6' />
+                  <column datatype='string' name='Industry' ordinal='7' />
+                  <column datatype='date' name='Last Activity' ordinal='8' />
+                  <column datatype='string' name='Last Modified By ID' ordinal='9' />
+                  <column datatype='datetime' name='Last Modified Date' ordinal='10' />
+                  <column datatype='string' name='Lead Type' ordinal='11' />
+                  <column datatype='string' name='Owner ID' ordinal='12' />
+                  <column datatype='string' name='Record Type ID' ordinal='13' />
+                  <column datatype='datetime' name='System Modstamp' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD' table='[Extract].[Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD]' type='table' />
+            </properties>
+          </object>
+          <object caption='Lead.csv' id='Lead.csv_975AF6774C044235AC99555716513DC6'>
+            <properties context=''>
+              <relation connection='textscan.1naux960tpuwn11h5wj3l19ji3hc' name='Lead.csv' table='[Lead#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='boolean' name='Converted' ordinal='0' />
+                  <column datatype='string' name='Converted Account ID' ordinal='1' />
+                  <column datatype='string' name='Converted Opportunity ID' ordinal='2' />
+                  <column datatype='string' name='Country' ordinal='3' />
+                  <column datatype='datetime' name='Created Date' ordinal='4' />
+                  <column datatype='string' name='Dead Reason' ordinal='5' />
+                  <column datatype='string' name='Industry' ordinal='6' />
+                  <column datatype='date' name='Last Status Change' ordinal='7' />
+                  <column datatype='string' name='Lead ID' ordinal='8' />
+                  <column datatype='string' name='Lead Source' ordinal='9' />
+                  <column datatype='string' name='Lead Type' ordinal='10' />
+                  <column datatype='string' name='LeadRecordType' ordinal='11' />
+                  <column datatype='string' name='Primary Application' ordinal='12' />
+                  <column datatype='string' name='Product Category' ordinal='13' />
+                  <column datatype='string' name='Record Type ID' ordinal='14' />
+                  <column datatype='string' name='Status' ordinal='15' />
+                  <column datatype='string' name='Status (Simplified)' ordinal='16' />
+                  <column datatype='integer' name='# Converted Accounts' ordinal='17' />
+                  <column datatype='integer' name='# Converted Opportunities' ordinal='18' />
+                  <column datatype='integer' name='Campaign Membership Count' ordinal='19' />
+                  <column datatype='real' name='Conversion Rate' ordinal='20' />
+                  <column datatype='string' name='Lead Score' ordinal='21' />
+                  <column datatype='integer' name='Total Leads' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Lead.csv_975AF6774C044235AC99555716513DC6' table='[Extract].[Lead.csv_975AF6774C044235AC99555716513DC6]' type='table' />
+            </properties>
+          </object>
+          <object caption='Oppertuninty Table.csv' id='Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A'>
+            <properties context=''>
+              <relation connection='textscan.1naux960tpuwn11h5wj3l19ji3hc' name='Oppertuninty Table.csv' table='[Oppertuninty Table#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Account ID' ordinal='0' />
+                  <column datatype='date' name='Close Date' ordinal='1' />
+                  <column datatype='boolean' name='Closed' ordinal='2' />
+                  <column datatype='string' name='Contact ID' ordinal='3' />
+                  <column datatype='string' name='Created By ID' ordinal='4' />
+                  <column datatype='boolean' name='Created by Lead Conversion' ordinal='5' />
+                  <column datatype='datetime' name='Created Date' ordinal='6' />
+                  <column datatype='string' name='Fiscal Period' ordinal='7' />
+                  <column datatype='string' name='Forecast Category' ordinal='8' />
+                  <column datatype='string' name='Industry' ordinal='9' />
+                  <column datatype='date' name='Last Activity' ordinal='10' />
+                  <column datatype='string' name='Last Modified By ID' ordinal='11' />
+                  <column datatype='datetime' name='Last Modified Date' ordinal='12' />
+                  <column datatype='datetime' name='Last Stage Change Date' ordinal='13' />
+                  <column datatype='string' name='Lead Source' ordinal='14' />
+                  <column datatype='string' name='Opportunity ID' ordinal='15' />
+                  <column datatype='string' name='Owner ID' ordinal='16' />
+                  <column datatype='string' name='Price Book ID' ordinal='17' />
+                  <column datatype='string' name='Quote ID' ordinal='18' />
+                  <column datatype='string' name='Record Type ID' ordinal='19' />
+                  <column datatype='string' name='Stage' ordinal='20' />
+                  <column datatype='datetime' name='System Modstamp' ordinal='21' />
+                  <column datatype='real' name='Amount' ordinal='22' />
+                  <column datatype='real' name='Expected Amount' ordinal='23' />
+                  <column datatype='integer' name='Probability (%)' ordinal='24' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A' table='[Extract].[Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A]' type='table' />
+            </properties>
+          </object>
+          <object caption='Opportunity Product.csv' id='Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52'>
+            <properties context=''>
+              <relation connection='textscan.1naux960tpuwn11h5wj3l19ji3hc' name='Opportunity Product.csv' table='[Opportunity Product#csv]' type='table'>
+                <columns character-set='ISO_8859-2:1987' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Created By ID' ordinal='0' />
+                  <column datatype='datetime' name='Created Date' ordinal='1' />
+                  <column datatype='string' name='Last Modified By ID' ordinal='2' />
+                  <column datatype='datetime' name='Last Modified Date' ordinal='3' />
+                  <column datatype='string' name='Line Item ID' ordinal='4' />
+                  <column datatype='string' name='Opportunity ID' ordinal='5' />
+                  <column datatype='string' name='Product Name' ordinal='6' />
+                  <column datatype='string' name='Price Book Entry ID' ordinal='7' />
+                  <column datatype='string' name='Product Code' ordinal='8' />
+                  <column datatype='string' name='Product ID' ordinal='9' />
+                  <column datatype='datetime' name='System Modstamp' ordinal='10' />
+                  <column datatype='real' name='List Price' ordinal='11' />
+                  <column datatype='integer' name='Quantity' ordinal='12' />
+                  <column datatype='real' name='Sales Price' ordinal='13' />
+                  <column datatype='integer' name='Sort Order' ordinal='14' />
+                  <column datatype='real' name='Subtotal' ordinal='15' />
+                  <column datatype='real' name='Total Price' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52' table='[Extract].[Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52]' type='table' />
+            </properties>
+          </object>
+          <object caption='User Table.csv' id='User Table.csv_1171738D4C8E4AA4985186EBCA135A70'>
+            <properties context=''>
+              <relation connection='textscan.1naux960tpuwn11h5wj3l19ji3hc' name='User Table.csv' table='[User Table#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Created By ID' ordinal='0' />
+                  <column datatype='datetime' name='Created Date' ordinal='1' />
+                  <column datatype='string' name='Department' ordinal='2' />
+                  <column datatype='string' name='Full Name' ordinal='3' />
+                  <column datatype='datetime' name='Last Login' ordinal='4' />
+                  <column datatype='string' name='Last Modified By ID' ordinal='5' />
+                  <column datatype='datetime' name='Last Modified Date' ordinal='6' />
+                  <column datatype='string' name='Manager ID' ordinal='7' />
+                  <column datatype='string' name='Profile ID' ordinal='8' />
+                  <column datatype='string' name='Role ID' ordinal='9' />
+                  <column datatype='datetime' name='System Modstamp' ordinal='10' />
+                  <column datatype='string' name='User ID' ordinal='11' />
+                  <column datatype='string' name='User Type' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='User Table.csv_1171738D4C8E4AA4985186EBCA135A70' table='[Extract].[User Table.csv_1171738D4C8E4AA4985186EBCA135A70]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Account ID]' />
+              <expression op='[Converted Account ID]' />
+            </expression>
+            <first-end-point object-id='Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD' />
+            <second-end-point object-id='Lead.csv_975AF6774C044235AC99555716513DC6' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Account ID]' />
+              <expression op='[Account ID (Oppertuninty Table.csv)]' />
+            </expression>
+            <first-end-point object-id='Account.csv_89B2F7CE1E47420F87F7B15BCD1720BD' />
+            <second-end-point object-id='Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Opportunity ID]' />
+              <expression op='[Opportunity ID (Opportunity Product.csv)]' />
+            </expression>
+            <first-end-point object-id='Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A' />
+            <second-end-point object-id='Opportunity Product.csv_00A7ECED3B654A6288482AD985097A52' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Owner ID (Oppertuninty Table.csv)]' />
+              <expression op='[User ID]' />
+            </expression>
+            <first-end-point object-id='Oppertuninty Table.csv_852ABC6BC6874CD7B4ECC5F2F43D904A' />
+            <second-end-point object-id='User Table.csv_1171738D4C8E4AA4985186EBCA135A70' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Expected Amount'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Account.csv+ (Multiple Connections)' name='federated.1rcglt3055ryv1189mmi90193fds' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rcglt3055ryv1189mmi90193fds'>
+            <column datatype='real' name='[Expected Amount]' role='measure' type='quantitative' />
+            <column-instance column='[Expected Amount]' derivation='Sum' name='[sum:Expected Amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1rcglt3055ryv1189mmi90193fds].[sum:Expected Amount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3E1F80FE-DBB6-413E-A2B4-7F510AAB8861}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Expected Amount'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2F16FE06-7639-4266-8723-B60ECC4D40AF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='25' name='Expected Amount' width='104'>
+      iVBORw0KGgoAAAANSUhEUgAAAGgAAAAZCAYAAADdYmvFAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAGwklEQVRoge2aW0hUXRvHf21zkjH01cYJytPNCGINdNGBHJOCskwIBTUipgK1mC6EtEhB
+      O2hqpdJFBYEYDgWVEWHmhQ3BMGpd2VR4SEWoRCTHbDS3OnvafRfi/t55PX/V+83F/MALn/3s
+      /7P2+u+11rPFVT9//vyJD69F+H8PwMfi+AzycnwGeTk+g7wcn0Fejs8gL8dnkJfjM8jL8Rnk
+      5fgM8nJ8Bnk5PoO8nN9i0Pj4ONevX+fBgwdzrsmyTGNjIxkZGSQnJ5ORkUFjYyOyLM+rNTo6
+      islkIi8vD1EUl6wtyzKvX78mLy8Ph8OxYN6zZ89ITk7GZrMpMUmSsFgsnDx5kuTkZJKTkyks
+      LOTjx4+L1nS5XJjNZg4ePEhCQgImk4n+/v45eaIoUllZyb59+4iPj+fYsWO0t7evSGf1kjOw
+      CKIocu/ePRoaGlizZg3BwcFzcmpra3n37h2VlZVERkby6dMnKisrGRoaIisryyNXlmXq6urQ
+      aDSMjIyw2B/aZVnmw4cPlJeX43K5kCRpQdMBmpub2bhxI9PT00qsra2N1tZWCgsLiYiI4MeP
+      H9hsNs6ePcu1a9eIjo6et25dXR0Oh4P6+noCAgJoaWnh4sWLlJWVER4eDsDk5CTFxcXodDoa
+      GhoICAhgcHCQ0dHRFen80gp68uQJAI8ePSIpKWnOdafTid1uJz8/n8jISAAiIyPJz8/Hbrfj
+      dDo98t++fcvg4CApKSmsWrVq0doOh4OamhoKCgq4cePGvC/HLC6Xi/T0dNatW+cRT0xM5MKF
+      C0RFRSEIAv7+/uzZs4cdO3bQ19c3r9bAwADv37/HZDKhVqsRBIFdu3ZhMBiU+QB48eIFwcHB
+      ZGdnExAQAMCGDRuIi4tbkc4vGXT06FFycnJQq9XzXvf390elUs3ZqkRRRKVS4e/vr8TGxsYw
+      m81kZWUpD7QYWq2WqqoqYmNjEYTFH6O5uRmDwbCMJ5oxc2hoaMExfPv2jbCwsDkvRHx8PP39
+      /YiiiNvtprW1laSkpAXHthwd+MNNglqtxmg0UlVVRUdHB5Ik0dHRQVVVFUajUTFWlmUePnzI
+      5s2biYmJ+a1jGBgYoLm5eUkTAYaHh6moqECj0bBt27Z5c/z8/BgeHmZiYsIjHhYWxtjYGN+/
+      f2dsbIzx8XEiIiLo6emhqakJi8WibG/L1YF/oYvT6/WkpaWRm5vLoUOHyM3NJS0tDb1er+R0
+      dnbS3d1NZmbmb63tdrsxm82kpKQsmONwODAajSQmJnL48GEMBgP5+fmoVKp583U6HatXr6am
+      poapqSlgZvXbbDZlUt1uN58/f+b48ePcvXsXl8vFmzdvyMzMpKmpadk68ItNwlL09vZSXV1N
+      RUUFBw4cUOJOp5PTp09z5swZ2tvbMZvNbNmyhatXrwIzy7+vr48rV66wd+9edu/eveLaX79+
+      xWQyERoaytTUFC0tLXR0dDAyMoLdbicnJ4egoCA0Gg1ms1m5T5Zl7ty5g5+fHzk5OXN0VSoV
+      1dXVHrGgoCD0ej1tbW2sXbsWSZKIiori3LlzytkLkJeXR0lJCeHh4ej1+iV14A8b5HK5EARh
+      zvYyG3O5XKSkpMwxoKuri/v375OdnY1Wq/2fav/111/cvHnTo7MrLy/HYDCQmJioTMA/EQQB
+      nU6HxWJZUb1Xr14RFRWFWq1GlmXWr1+P3W73MEiSJCYmJvDz81uWDvzhLS46OhpJkrBarcpE
+      ybKM1WpFkiSio6MJDAxEq9V6/ISEhKBSqdBqtQQGBgIzjUVbW5uyHSyFIAhoNBoP3dlPAY1G
+      gyAINDU18eXLF4/7pqamePnyJTt37lRiXV1d9Pb2Kr+LouhhfE9PDy0tLaSlpSm1U1NTefz4
+      MQMDA0peZ2cnoigq7ftSOvALK0gURYqKiujq6gJQDrunT58CUFBQQEJCAkVFRRQXF1NbW0tM
+      TAw9PT0EBwdz+fJlZfKXg8Viob6+nlu3bhEQEIDNZqO8vByYMd3pdGI0GhEEgdjYWEpKShbs
+      LmeZ3camp6eJjY1FkiS6u7tJTU1l//79wMy5UFZWRnp6OjqdDoDbt29jtVqJi4tjfHycoaEh
+      Ll26pHy7AGzatIkTJ05w6tQpYmJimJ6eZnh4mNLSUuW5l6Oz6t/6tyun08n09PSCH7SLMTk5
+      yfnz5zly5Ajbt2//7WObmJhQXrCQkBCP9t9qtfL8+XNKS0s9GofZewRBIDQ0dMEuUZIkRkdH
+      F8xbSuePnkF/Z6Wm/J3Ozk6ioqLYunXrbxzRfwkMDJx3Nbvdbmw2G1lZWXO6uoXu+Sf+/v6L
+      nqNL6fwHaUIjBqDFzrcAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
